@@ -1,0 +1,116 @@
+#projects{
+    margin: 0 auto;
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.projectsTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.projectsDescription{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+}
+
+.projectBars {
+    display: flex;
+    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 2rem; /* Adds space between the cards */
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.projectBar {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 18rem; /* Sets a fixed card width */
+    border-radius: 1rem; /* Rounds card corners */
+    background: rgb(40, 40, 40); /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.projectBar:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+.projectBarImg {
+    object-fit: cover;
+    height: 4rem; /* Slightly larger for cards */
+    width: 4rem; /* Matches height for a square */
+    margin-bottom: 1rem; /* Adds space below the image */
+    border-radius: 50%; /* Circular image */
+    border: 2px solid var(--primary-color); /* Adds a border for a pop of color */
+    transition: transform 0.3s ease;
+}
+
+.projectBarImg:hover {
+    transform: scale(1.2); /* Zooms in the image on hover */
+}
+
+.projectBarText {
+    color: var(--text-color); /* Ensure text is legible */
+}
+
+.projectBarText > h2 {
+    font-size: 1.25rem; /* Adjusts heading size */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); /* Highlights the title */
+}
+
+.projectBarText > p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #ccc; /* Softer color for descriptions */
+}
+
+.projectLink {
+    color: yellow; /* Sets text color */
+    text-decoration: none; /* Removes the underline for links */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.2em; /* Slightly larger text */
+    display: inline-block; /* Ensures the line appears above the link */
+    position: relative; /* Required for positioning the line */
+    padding-top: 5px; /* Adds spacing between the line and the text */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.projectLink::before {
+    content: ""; /* Adds a pseudo-element for the line */
+    position: absolute;
+    top: 0; /* Positions the line above the text */
+    left: 0;
+    width: 100%; /* Spans the entire width of the link */
+    height: 2px; /* Thickness of the line */
+    background-color: grey; /* Line color */
+    opacity: 0.6; /* Makes the line slightly transparent */
+}
+
+.projectLink:hover {
+    color: orange; /* Changes color on hover */
+    transform: scale(1.1); /* Slightly enlarges the link on hover */
+    text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.7); /* Adds a glowing effect */
+}
+
+.projectLink:active {
+    color: red; /* Changes color when clicked */
+    transform: scale(0.95); /* Shrinks slightly on click for feedback */
+}
