@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
-import Navbar from "C://Users/Anita Kalsekar/portfolio/portfolio/src/components/NavBar/Navbar.jsx";
+import "aos/dist/aos.css"; 
+import Navbar from "./components/NavBar/Navbar";
 import Intro from "./components/Intro/Intro";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
