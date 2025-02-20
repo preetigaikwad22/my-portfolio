@@ -23,10 +23,9 @@ const Intro = () => {
         </span>
 
         <p className="introPara">
-          Skilled in Java, Fullstack (MERN stack) development, and Data
-          Analysis.
-          <br />
-          I specialize in creating robust, scalable, and user-centric
+          Skilled in <strong className="intro-highlights">Java Development</strong>, <strong className="intro-highlights">MERN Stack Development</strong>, and <br /> <strong className="intro-highlights">Data
+          Analysis</strong>.
+          I specialize in creating robust, scalable, and <br /> user-centric
           applications, leveraging data-driven insights to enhance performance and
           decision-making.
         </p>

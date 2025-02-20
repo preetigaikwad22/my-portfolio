@@ -33,6 +33,10 @@
     gap: 1rem;
 }
 
+.intro-highlights{
+    color: yellow;
+}
+
 
 .hello {
     font-size: clamp(1.25rem, 3vw, 1.75rem);
