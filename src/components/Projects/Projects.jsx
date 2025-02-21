@@ -25,9 +25,34 @@ const Projects = () => {
           <div className="projectBarText">
             <h2>
               Interview 360 <br />
-              (under construction)
             </h2>
             <p>MERN Stack • RESTful APIs • AI • JavaScript • NextJS</p>
+            <a
+              href="https://github.com/preetigaikwad22/interview360"
+              className="projectLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <div className="projectBar">
+          <img src={frontend} alt="" className="projectBarImg" />
+          <div className="projectBarText">
+            <h2>
+              Ping Me <br />
+            </h2>
+            <p>MERN Stack • Socket.io</p>
+            <a
+              href="https://github.com/preetigaikwad22/ping-me"
+              className="projectLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repository
+            </a>
           </div>
         </div>
 
