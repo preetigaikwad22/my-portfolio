@@ -52,6 +52,13 @@ const Projects = () => {
               rel="noopener noreferrer"
             >
               GitHub Repository
+            </a><a
+              href="https://ping-me-3fkr.onrender.com/login"
+              className="projectLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
             </a>
           </div>
         </div>
