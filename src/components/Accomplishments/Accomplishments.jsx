@@ -15,6 +15,25 @@ const Accomplishments = () => {
             </span>
             
             <div className="skillBars">
+
+            <div className="skillBar">
+                    <img src={progLang} alt="progLang" className="skillBarImg" />
+                    <div className="skillBarText">
+                        <h2>SQL for Data Analysis</h2>
+                        <p>Linkedin</p>
+                        <a 
+                            href="https://www.linkedin.com/learning/certificates/bcbecbabe3a77362bb7b85fc0c946a8383244db414d227904738f223ab8a7253?trk=share_certificate" 
+                            target="_blank" 
+                            rel="noreferrer"
+                            className="accomplishmentLink"
+                        >
+                            View Credentials
+                        </a>
+                    </div>
+                </div>
+
+
+
                 <div className="skillBar">
                     <img src={progLang} alt="progLang" className="skillBarImg" />
                     <div className="skillBarText">
